@@ -39,7 +39,7 @@ public class CTCToolkit extends CacioToolkit {
     
     static {
         if (System.getProperty("os.name").equals("Linux")) {
-            System.load(System.getenv("POJAV_NATIVEDIR")+"/libpojavexec_awt.so");
+            System.load(System.getenv("POJAV_NATIVEDIR")+"/libfcl_awt.so");
         }
     }
     
