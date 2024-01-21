@@ -20,7 +20,7 @@ package android.os;
  * Interface for classes whose instances can be written to
  * and restored from a {@link Parcel}.  Classes implementing the Parcelable
  * interface must also have a static field called <code>CREATOR</code>, which
- * is an object implementing the {@link Parcelable.Creator Parcelable.Creator}
+ * is an object implementing the {@link Creator Parcelable.Creator}
  * interface.
  * 
  * <p>A typical implementation of Parcelable is:</p>

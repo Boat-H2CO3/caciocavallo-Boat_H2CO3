@@ -204,7 +204,7 @@ public final class Outline {
 
     /**
      * Sets the Constructs an Outline from a
-     * {@link android.graphics.Path#isConvex() convex path}.
+     * {@link Path#isConvex() convex path}.
      */
     public void setConvexPath(@NonNull Path convexPath) {
         if (convexPath.isEmpty()) {

@@ -54,28 +54,28 @@ public class PixelFormat
 
 
     /**
-     * @deprecated use {@link android.graphics.ImageFormat#NV16
+     * @deprecated use {@link ImageFormat#NV16
      * ImageFormat.NV16} instead.
      */
     @Deprecated
     public static final int YCbCr_422_SP= 0x10;
 
     /**
-     * @deprecated use {@link android.graphics.ImageFormat#NV21
+     * @deprecated use {@link ImageFormat#NV21
      * ImageFormat.NV21} instead.
      */
     @Deprecated
     public static final int YCbCr_420_SP= 0x11;
 
     /**
-     * @deprecated use {@link android.graphics.ImageFormat#YUY2
+     * @deprecated use {@link ImageFormat#YUY2
      * ImageFormat.YUY2} instead.
      */
     @Deprecated
     public static final int YCbCr_422_I = 0x14;
 
     /**
-     * @deprecated use {@link android.graphics.ImageFormat#JPEG
+     * @deprecated use {@link ImageFormat#JPEG
      * ImageFormat.JPEG} instead.
      */
     @Deprecated

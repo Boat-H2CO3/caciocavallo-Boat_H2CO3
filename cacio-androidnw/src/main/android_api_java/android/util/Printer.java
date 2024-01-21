@@ -18,9 +18,9 @@ package android.util;
 
 /**
  * Simple interface for printing text, allowing redirection to various
- * targets.  Standard implementations are {@link android.util.LogPrinter},
- * {@link android.util.StringBuilderPrinter}, and
- * {@link android.util.PrintWriterPrinter}.
+ * targets.  Standard implementations are {@link LogPrinter},
+ * {@link StringBuilderPrinter}, and
+ * {@link PrintWriterPrinter}.
  */
 public interface Printer {
     /**

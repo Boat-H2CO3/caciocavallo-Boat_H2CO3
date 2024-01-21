@@ -245,7 +245,7 @@ public class Typeface {
         mStyle = nativeGetStyle(ni);
     }
 
-    private static FontFamily makeFamilyFromParsed(FontListParser.Family family) {
+    private static FontFamily makeFamilyFromParsed(Family family) {
         FontFamily fontFamily = new FontFamily(family.lang, family.variant);
         for (FontListParser.Font font : family.fonts) {
             fontFamily.addFontWeightStyle(font.fontName, font.weight, font.isItalic);

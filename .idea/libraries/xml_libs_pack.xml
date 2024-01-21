@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xml-libs-pack">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/cacio-androidnw/lib/xml-libs-pack.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -849,9 +849,9 @@ public class Canvas {
      * therefore you can skip making the draw calls).
      *
      * @param rect  the rect to compare with the current clip
-     * @param type  {@link Canvas.EdgeType#AA} if the path should be considered antialiased,
+     * @param type  {@link EdgeType#AA} if the path should be considered antialiased,
      *              since that means it may affect a larger area (more pixels) than
-     *              non-antialiased ({@link Canvas.EdgeType#BW}).
+     *              non-antialiased ({@link EdgeType#BW}).
      * @return      true if the rect (transformed by the canvas' matrix)
      *              does not intersect with the canvas' clip
      */
@@ -869,9 +869,9 @@ public class Canvas {
      * (i.e. the bounds of the path intersects, but the path does not).
      *
      * @param path        The path to compare with the current clip
-     * @param type        {@link Canvas.EdgeType#AA} if the path should be considered antialiased,
+     * @param type        {@link EdgeType#AA} if the path should be considered antialiased,
      *                    since that means it may affect a larger area (more pixels) than
-     *                    non-antialiased ({@link Canvas.EdgeType#BW}).
+     *                    non-antialiased ({@link EdgeType#BW}).
      * @return            true if the path (transformed by the canvas' matrix)
      *                    does not intersect with the canvas' clip
      */
@@ -893,9 +893,9 @@ public class Canvas {
      *                    current clip
      * @param bottom      The bottom of the rectangle to compare with the
      *                    current clip
-     * @param type        {@link Canvas.EdgeType#AA} if the path should be considered antialiased,
+     * @param type        {@link EdgeType#AA} if the path should be considered antialiased,
      *                    since that means it may affect a larger area (more pixels) than
-     *                    non-antialiased ({@link Canvas.EdgeType#BW}).
+     *                    non-antialiased ({@link EdgeType#BW}).
      * @return            true if the rect (transformed by the canvas' matrix)
      *                    does not intersect with the canvas' clip
      */

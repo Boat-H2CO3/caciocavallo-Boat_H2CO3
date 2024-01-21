@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cacioweb">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/cacio-web/setup/cacioweb.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

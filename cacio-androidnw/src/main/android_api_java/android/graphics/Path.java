@@ -101,8 +101,8 @@ public class Path {
     /**
      * The logical operations that can be performed when combining two paths.
      *
-     * @see #op(Path, android.graphics.Path.Op)
-     * @see #op(Path, Path, android.graphics.Path.Op)
+     * @see #op(Path, Op)
+     * @see #op(Path, Path, Op)
      */
     public enum Op {
         /**
@@ -138,7 +138,7 @@ public class Path {
      * @return True if operation succeeded, false otherwise and this path remains unmodified.
      *
      * @see Op
-     * @see #op(Path, Path, android.graphics.Path.Op)
+     * @see #op(Path, Path, Op)
      */
     public boolean op(Path path, Op op) {
         return op(this, path, op);
@@ -156,7 +156,7 @@ public class Path {
      * @return True if operation succeeded, false otherwise and this path remains unmodified.
      *
      * @see Op
-     * @see #op(Path, android.graphics.Path.Op)
+     * @see #op(Path, Op)
      */
     public boolean op(Path path1, Path path2, Op op) {
         if (native_op(path1.mNativePath, path2.mNativePath, op.ordinal(), this.mNativePath)) {

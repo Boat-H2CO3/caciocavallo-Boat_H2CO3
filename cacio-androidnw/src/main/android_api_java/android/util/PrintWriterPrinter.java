@@ -19,7 +19,7 @@ package android.util;
 import java.io.PrintWriter;
 
 /**
- * Implementation of a {@link android.util.Printer} that sends its output
+ * Implementation of a {@link Printer} that sends its output
  * to a {@link java.io.PrintWriter}.
  */
 public class PrintWriterPrinter implements Printer {

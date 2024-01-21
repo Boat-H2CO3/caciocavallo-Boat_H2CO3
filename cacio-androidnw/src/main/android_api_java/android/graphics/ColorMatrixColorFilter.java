@@ -73,7 +73,7 @@ public class ColorMatrixColorFilter extends ColorFilter {
      * @param matrix A {@link ColorMatrix} or null
      *
      * @see #getColorMatrix()
-     * @see android.graphics.ColorMatrix#reset()
+     * @see ColorMatrix#reset()
      * @see #setColorMatrix(float[])
      *
      * @hide
@@ -97,7 +97,7 @@ public class ColorMatrixColorFilter extends ColorFilter {
      *              the filter. See {@link ColorMatrix}.
      *
      * @see #getColorMatrix()
-     * @see android.graphics.ColorMatrix#reset()
+     * @see ColorMatrix#reset()
      * @see #setColorMatrix(ColorMatrix)
      *
      * @throws ArrayIndexOutOfBoundsException if the specified array's

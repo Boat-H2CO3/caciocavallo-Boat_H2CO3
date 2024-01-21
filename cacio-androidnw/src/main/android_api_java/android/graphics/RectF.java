@@ -554,7 +554,7 @@ public class RectF implements Parcelable {
         out.writeFloat(bottom);
     }
     
-    public static final Parcelable.Creator<RectF> CREATOR = new Parcelable.Creator<RectF>() {
+    public static final Creator<RectF> CREATOR = new Creator<RectF>() {
         /**
          * Return a new rectangle from the data in the specified parcel.
          */

@@ -32,7 +32,7 @@ public class PorterDuffColorFilter extends ColorFilter {
      *
      * @see Color
      * @see #setColor(int)
-     * @see #setMode(android.graphics.PorterDuff.Mode)
+     * @see #setMode(PorterDuff.Mode)
      */
     public PorterDuffColorFilter(int color, PorterDuff.Mode mode) {
         mColor = color;
@@ -75,7 +75,7 @@ public class PorterDuffColorFilter extends ColorFilter {
      * color with the source pixel when this filter is applied.
      *
      * @see PorterDuff
-     * @see #setMode(android.graphics.PorterDuff.Mode)
+     * @see #setMode(PorterDuff.Mode)
      *
      * @hide
      */

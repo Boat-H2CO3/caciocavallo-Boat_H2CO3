@@ -77,13 +77,13 @@ public class Atlas {
     /**
      * Creates a new atlas with the specified algorithm and dimensions
      * in pixels. Calling this constructor is equivalent to calling
-     * {@link #Atlas(Atlas.Type, int, int, int)} with {@link #FLAG_DEFAULTS}.
+     * {@link #Atlas(Type, int, int, int)} with {@link #FLAG_DEFAULTS}.
      *
      * @param type The algorithm to use to pack rectangles in the atlas
      * @param width The width of the atlas in pixels
      * @param height The height of the atlas in pixels
      *
-     * @see #Atlas(Atlas.Type, int, int, int)
+     * @see #Atlas(Type, int, int, int)
      */
     public Atlas(Type type, int width, int height) {
         this(type, width, height, FLAG_DEFAULTS);
@@ -100,7 +100,7 @@ public class Atlas {
      * @param flags Optional flags to control the behavior of the atlas:
      *              {@link #FLAG_ADD_PADDING}, {@link #FLAG_ALLOW_ROTATIONS}
      *
-     * @see #Atlas(Atlas.Type, int, int)
+     * @see #Atlas(Type, int, int)
      */
     public Atlas(Type type, int width, int height, int flags) {
         mPolicy = findPolicy(type, width, height, flags);
@@ -115,7 +115,7 @@ public class Atlas {
      * @return An {@link Entry} instance if the rectangle was packed in
      *         the atlas, or null if the rectangle could not fit
      *
-     * @see #pack(int, int, Atlas.Entry)
+     * @see #pack(int, int, Entry)
      */
     public Entry pack(int width, int height) {
         return pack(width, height, null);

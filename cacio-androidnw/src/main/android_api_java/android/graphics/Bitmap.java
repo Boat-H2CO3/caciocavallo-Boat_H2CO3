@@ -154,7 +154,7 @@ public final class Bitmap implements Parcelable {
      * <p>The default density is the same density as the current display,
      * unless the current application does not support different screen
      * densities in which case it is
-     * {@link android.util.DisplayMetrics#DENSITY_DEFAULT}.  Note that
+     * {@link DisplayMetrics#DENSITY_DEFAULT}.  Note that
      * compatibility mode is determined by the application that was initially
      * loaded into a process -- applications that share the same process should
      * all have the same compatibility, or ensure they explicitly set the
@@ -164,8 +164,8 @@ public final class Bitmap implements Parcelable {
      *         if the scaling factor is unknown.
      *
      * @see #setDensity(int)
-     * @see android.util.DisplayMetrics#DENSITY_DEFAULT
-     * @see android.util.DisplayMetrics#densityDpi
+     * @see DisplayMetrics#DENSITY_DEFAULT
+     * @see DisplayMetrics#densityDpi
      * @see #DENSITY_NONE
      */
     public int getDensity() {
@@ -181,8 +181,8 @@ public final class Bitmap implements Parcelable {
      *        {@link #DENSITY_NONE} if the density is unknown.
      *
      * @see #getDensity()
-     * @see android.util.DisplayMetrics#DENSITY_DEFAULT
-     * @see android.util.DisplayMetrics#densityDpi
+     * @see DisplayMetrics#DENSITY_DEFAULT
+     * @see DisplayMetrics#densityDpi
      * @see #DENSITY_NONE
      */
     public void setDensity(int density) {
@@ -1031,10 +1031,10 @@ public final class Bitmap implements Parcelable {
      * <code>(128, 128, 0, 0)</code>.</p>
      * 
      * <p>This method always returns false if {@link #getConfig()} is
-     * {@link Bitmap.Config#RGB_565}.</p>
+     * {@link Config#RGB_565}.</p>
      * 
      * <p>The return value is undefined if {@link #getConfig()} is
-     * {@link Bitmap.Config#ALPHA_8}.</p>
+     * {@link Config#ALPHA_8}.</p>
      *
      * <p>This method only returns true if {@link #hasAlpha()} returns true.
      * A bitmap with no alpha channel can be used both as a pre-multiplied and
@@ -1189,7 +1189,7 @@ public final class Bitmap implements Parcelable {
      * <p>This can be larger than the result of {@link #getByteCount()} if a bitmap is reused to
      * decode other bitmaps of smaller size, or by manual reconfiguration. See {@link
      * #reconfigure(int, int, Config)}, {@link #setWidth(int)}, {@link #setHeight(int)}, {@link
-     * #setConfig(Bitmap.Config)}, and {@link BitmapFactory.Options#inBitmap
+     * #setConfig(Config)}, and {@link BitmapFactory.Options#inBitmap
      * BitmapFactory.Options.inBitmap}. If a bitmap is not modified in this way, this value will be
      * the same as that returned by {@link #getByteCount()}.</p>
      *
@@ -1465,8 +1465,8 @@ public final class Bitmap implements Parcelable {
                         x, y, width, height);
     }
 
-    public static final Parcelable.Creator<Bitmap> CREATOR
-            = new Parcelable.Creator<Bitmap>() {
+    public static final Creator<Bitmap> CREATOR
+            = new Creator<Bitmap>() {
         /**
          * Rebuilds a bitmap previously stored with writeToParcel().
          *

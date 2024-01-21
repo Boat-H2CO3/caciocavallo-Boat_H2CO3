@@ -34,7 +34,7 @@ import java.util.regex.Pattern;
  * activity manager state, system watchdogs, and other low level activity),
  * which may be automatically collected and analyzed during system development.
  *
- * <p>This is <b>not</b> the main "logcat" debugging log ({@link android.util.Log})!
+ * <p>This is <b>not</b> the main "logcat" debugging log ({@link Log})!
  * These diagnostic events are for system integrators, not application authors.
  *
  * <p>Events use integer tag codes corresponding to /system/etc/event-log-tags.

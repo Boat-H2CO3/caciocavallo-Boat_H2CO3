@@ -61,8 +61,8 @@ public class Surface implements Parcelable {
 		OpenJDKNativeRegister.tryRegisterNatives("_ZN7android29register_android_view_SurfaceEP7_JNIEnv");
 	}
 	
-    public static final Parcelable.Creator<Surface> CREATOR =
-            new Parcelable.Creator<Surface>() {
+    public static final Creator<Surface> CREATOR =
+            new Creator<Surface>() {
         @Override
         public Surface createFromParcel(Parcel source) {
             try {
@@ -251,7 +251,7 @@ public class Surface implements Parcelable {
      * @throws OutOfResourcesException If the canvas cannot be locked.
      */
     public Canvas lockCanvas(Rect inOutDirty)
-            throws Surface.OutOfResourcesException, IllegalArgumentException {
+            throws OutOfResourcesException, IllegalArgumentException {
         synchronized (mLock) {
             checkNotReleasedLocked();
             if (mLockedObject != 0) {

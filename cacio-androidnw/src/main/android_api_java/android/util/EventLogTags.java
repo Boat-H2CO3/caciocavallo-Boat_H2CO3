@@ -21,7 +21,7 @@ import java.io.IOException;
 
 /**
  * @deprecated This class is no longer functional.
- * Use {@link android.util.EventLog} instead.
+ * Use {@link EventLog} instead.
  */
 @Deprecated
 public class EventLogTags {

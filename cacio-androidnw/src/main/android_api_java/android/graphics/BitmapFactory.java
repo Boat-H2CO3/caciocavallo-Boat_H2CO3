@@ -83,7 +83,7 @@ public class BitmapFactory {
          * additional constraints apply: The image being decoded (whether as a
          * resource or as a stream) must be in jpeg or png format. Only equal
          * sized bitmaps are supported, with {@link #inSampleSize} set to 1.
-         * Additionally, the {@link android.graphics.Bitmap.Config
+         * Additionally, the {@link Bitmap.Config
          * configuration} of the reused bitmap will override the setting of
          * {@link #inPreferredConfig}, if set.</p>
          *
@@ -99,7 +99,7 @@ public class BitmapFactory {
          * formats supported by BitmapRegionDecoder support Bitmap reuse via
          * {@link #inBitmap}.</p>
          *
-         * @see Bitmap#reconfigure(int,int, android.graphics.Bitmap.Config)
+         * @see Bitmap#reconfigure(int,int, Bitmap.Config)
          */
         public Bitmap inBitmap;
 
@@ -182,7 +182,7 @@ public class BitmapFactory {
          * 
          * <p>If this is 0,
          * {@link BitmapFactory#decodeResource(Resources, int)}, 
-         * {@link BitmapFactory#decodeResource(Resources, int, android.graphics.BitmapFactory.Options)},
+         * {@link BitmapFactory#decodeResource(Resources, int, Options)},
          * and {@link BitmapFactory#decodeResourceStream}
          * will fill in the density associated with the resource.  The other
          * functions will leave it as-is and no density will be applied.
@@ -191,7 +191,7 @@ public class BitmapFactory {
          * @see #inScreenDensity
          * @see #inScaled
          * @see Bitmap#setDensity(int)
-         * @see android.util.DisplayMetrics#densityDpi
+         * @see DisplayMetrics#densityDpi
          */
         public int inDensity;
 
@@ -203,7 +203,7 @@ public class BitmapFactory {
          * 
          * <p>If this is 0,
          * {@link BitmapFactory#decodeResource(Resources, int)}, 
-         * {@link BitmapFactory#decodeResource(Resources, int, android.graphics.BitmapFactory.Options)},
+         * {@link BitmapFactory#decodeResource(Resources, int, Options)},
          * and {@link BitmapFactory#decodeResourceStream}
          * will fill in the density associated the Resources object's
          * DisplayMetrics.  The other
@@ -213,7 +213,7 @@ public class BitmapFactory {
          * @see #inDensity
          * @see #inScreenDensity
          * @see #inScaled
-         * @see android.util.DisplayMetrics#densityDpi
+         * @see DisplayMetrics#densityDpi
          */
         public int inTargetDensity;
         
@@ -240,7 +240,7 @@ public class BitmapFactory {
          * @see #inDensity
          * @see #inTargetDensity
          * @see #inScaled
-         * @see android.util.DisplayMetrics#densityDpi
+         * @see DisplayMetrics#densityDpi
          */
         public int inScreenDensity;
         
@@ -292,8 +292,8 @@ public class BitmapFactory {
          *
          * <p class="note"><strong>Note:</strong> This flag is ignored when used
          * with {@link #decodeResource(Resources, int,
-         * android.graphics.BitmapFactory.Options)} or {@link #decodeFile(String,
-         * android.graphics.BitmapFactory.Options)}.</p>
+         * Options)} or {@link #decodeFile(String,
+         * Options)}.</p>
          */
         @Deprecated
         public boolean inPurgeable;
@@ -376,7 +376,7 @@ public class BitmapFactory {
         }
     }
 	
-	private static BitmapFactory.Options options = new BitmapFactory.Options();
+	private static Options options = new Options();
 	public static Bitmap decodeBufferedImage(java.awt.image.BufferedImage image) {
 		// Bitmap bm = Bitmap.createBitmap(image.getWidth(), image.getHeight(), Bitmap.Config.ARGB_8888);
 		

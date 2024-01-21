@@ -17,7 +17,7 @@
 package android.util;
 
 /**
- * Implementation of a {@link android.util.Printer} that sends its output
+ * Implementation of a {@link Printer} that sends its output
  * to the system log.
  */
 public class LogPrinter implements Printer {
@@ -30,11 +30,11 @@ public class LogPrinter implements Printer {
      * and tag.
      *
      * @param priority The desired log priority:
-     * {@link android.util.Log#VERBOSE Log.VERBOSE},
-     * {@link android.util.Log#DEBUG Log.DEBUG},
-     * {@link android.util.Log#INFO Log.INFO},
-     * {@link android.util.Log#WARN Log.WARN}, or
-     * {@link android.util.Log#ERROR Log.ERROR}.
+     * {@link Log#VERBOSE Log.VERBOSE},
+     * {@link Log#DEBUG Log.DEBUG},
+     * {@link Log#INFO Log.INFO},
+     * {@link Log#WARN Log.WARN}, or
+     * {@link Log#ERROR Log.ERROR}.
      * @param tag A string tag to associate with each printed log statement.
      */
     public LogPrinter(int priority, String tag) {

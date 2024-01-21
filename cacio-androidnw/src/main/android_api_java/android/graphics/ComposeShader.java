@@ -17,7 +17,7 @@
 package android.graphics;
 
 /** A subclass of shader that returns the composition of two other shaders, combined by
-    an {@link android.graphics.Xfermode} subclass.
+    an {@link Xfermode} subclass.
 */
 public class ComposeShader extends Shader {
 

@@ -18,7 +18,7 @@ package android.util;
 import android.util.Property;
 
 /**
- * An implementation of {@link android.util.Property} to be used specifically with fields of type
+ * An implementation of {@link Property} to be used specifically with fields of type
  * <code>float</code>. This type-specific subclass enables performance benefit by allowing
  * calls to a {@link #set(Object, Float) set()} function that takes the primitive
  * <code>float</code> type and avoids autoboxing and other overhead associated with the

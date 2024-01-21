@@ -334,8 +334,8 @@ public class Region implements Parcelable {
 
     //////////////////////////////////////////////////////////////////////////
     
-    public static final Parcelable.Creator<Region> CREATOR
-        = new Parcelable.Creator<Region>() {
+    public static final Creator<Region> CREATOR
+        = new Creator<Region>() {
             /**
             * Rebuild a Region previously stored with writeToParcel().
              * @param p    Parcel object to read the region from

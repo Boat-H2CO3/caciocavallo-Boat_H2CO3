@@ -17,7 +17,7 @@
 package android.util;
 
 /**
- * Implementation of a {@link android.util.Printer} that sends its output
+ * Implementation of a {@link Printer} that sends its output
  * to a {@link StringBuilder}.
  */
 public class StringBuilderPrinter implements Printer {

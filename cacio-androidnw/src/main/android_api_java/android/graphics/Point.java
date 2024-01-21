@@ -114,7 +114,7 @@ public class Point implements Parcelable {
         out.writeInt(y);
     }
 
-    public static final Parcelable.Creator<Point> CREATOR = new Parcelable.Creator<Point>() {
+    public static final Creator<Point> CREATOR = new Creator<Point>() {
         /**
          * Return a new point from the data in the specified parcel.
          */

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cacio-androidnw/cacio-androidnw.iml" filepath="$PROJECT_DIR$/cacio-androidnw/cacio-androidnw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cacio-directfb/cacio-directfb.iml" filepath="$PROJECT_DIR$/cacio-directfb/cacio-directfb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cacio-wayland/cacio-wayland.iml" filepath="$PROJECT_DIR$/cacio-wayland/cacio-wayland.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cacio-web/cacio-web.iml" filepath="$PROJECT_DIR$/cacio-web/cacio-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/caciocavallo-Boat_H2CO3.iml" filepath="$PROJECT_DIR$/.idea/caciocavallo-Boat_H2CO3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cacio-sdl/src/main/main.iml" filepath="$PROJECT_DIR$/cacio-sdl/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cacio-tta/src/main/main1.iml" filepath="$PROJECT_DIR$/cacio-tta/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cacio-shared/src/main/main2.iml" filepath="$PROJECT_DIR$/cacio-shared/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cacio-escher/src/main/main3.iml" filepath="$PROJECT_DIR$/cacio-escher/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cacio-x11/src/main/main4.iml" filepath="$PROJECT_DIR$/cacio-x11/src/main/main4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cacio-x11/src/test/test.iml" filepath="$PROJECT_DIR$/cacio-x11/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cacio-escher/src/test/test1.iml" filepath="$PROJECT_DIR$/cacio-escher/src/test/test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cacio-sdl/src/test/test2.iml" filepath="$PROJECT_DIR$/cacio-sdl/src/test/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cacio-tta/src/test/test3.iml" filepath="$PROJECT_DIR$/cacio-tta/src/test/test3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cacio-shared/src/test/test4.iml" filepath="$PROJECT_DIR$/cacio-shared/src/test/test4.iml" />
+    </modules>
+  </component>
+</project>
