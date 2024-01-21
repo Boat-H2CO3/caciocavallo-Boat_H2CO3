@@ -15,22 +15,28 @@ public class CTCAndroidInput {
     
     public static void receiveData(int type, int i1, int i2, int i3, int i4) {
         switch (type) {
-            case EVENT_TYPE_CURSOR_POS -> mRobotPeer.mouseMove(i1, i2);
-            case EVENT_TYPE_KEY -> {
+            case EVENT_TYPE_CURSOR_POS:
+                mRobotPeer.mouseMove(i1, i2);
+                break;
+
+            case EVENT_TYPE_KEY:
                 // TODO implement hold state
-                if (i3 == 1) mRobotPeer.keyPress(i2);
+                if(i3 == 1)mRobotPeer.keyPress(i2);
                 else mRobotPeer.keyRelease(i2);
-            }
-            case EVENT_TYPE_CHAR ->
+                break;
+
+            case EVENT_TYPE_CHAR:
                 // Send the char without checking shit
-                    mRobotPeer.keyPressUnchecked((char) i1);
-            case EVENT_TYPE_MOUSE_BUTTON -> {
+                mRobotPeer.keyPressUnchecked((char)i1);
+                break;
+
+            case EVENT_TYPE_MOUSE_BUTTON:
                 if (i2 == 1) {
                     mRobotPeer.mousePress(i1);
                 } else {
                     mRobotPeer.mouseRelease(i1);
                 }
-            }
+                break;
         }
     }
 }
